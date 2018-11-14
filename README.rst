@@ -74,15 +74,15 @@ If you are having trouble accessing items as in:
 
 .. code:: python
 
-    items_response = c.items.list()
-    for item in items_response.items.item:
+    items_response = c.item.list()
+    for item in items_response.item.item:
         print item.item_id
 
 Adjust your syntax to use dictionary item lookup:
 
 .. code:: python
 
-    items_response = c.items.list()
+    items_response = c.item.list()
     for item in items_response['items'].item:
         print item.item_id
 
